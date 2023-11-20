@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheet.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="header">
+        <a href="index.html"><img src="Image/Logo L03 v3.svg" style="width: 50px; height: 50px;" class="logo image-container"></a>
+        <input class="menu-btn" type="checkbox" id="menu-btn" />
+        <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+        <ul class="menu">
+          <li class="dropdown"><a href="#work">Package Tours</a>
+            <div class="dropdown-content">
+                <a href="PT1.html">China</a>
+                <a href="PT2.html">Singapore</a>
+                <a href="">Australia</a>
+            </div>
+        </li>
+          <li><a href="#about">Rediscover Singapore</a></li>
+          <li><a href="#careers">Cruises</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+        </ul>
+    </header>
+
+
+
+    <div class="size-con">
+      <div class="vid-con">
+          <video autoplay muted loop plays-inline id="myVideo">
+          <source src="video/video (1080p).mp4" type="video/mp4" >
+          </video>
+          <b><div class="centered-text">WorldXplore</div></b>
+      </div>
+    
+   <div>
+      
+        <div class="img-box">
+          <a href="PT1.html"><img src="Image/pexels-paulo-marcelo-martins-2412603.jpg" class="image image-container"></a>
+          <a href="PT2.html"><img src="Image/pexels-timo-volz-1842332.jpg" class="image image-container" ></a>
+          <img src="Image/pexels-mudassir-ali-1878293.jpg" class="image image-container">
+        </div>
+        
+    </div>
+    <div>
+      <footer style="background-color: #ffffffb4; top: 1;">
+        <ul>
+            <a href=""><li>Package Tours</li></a>
+            <a href=""><li>Rediscover Singapore</li></a>
+            <a href=""><li>Cruises</li></a>
+            <a href=""><li>Contact Us</li></a>
+            <br>
+        <a style="text-align: center;">&copy; WorldXplore 2023</a>
+        </ul>
+        
+      </footer>
+    </div>
+
+    
+
+
+
+    <script>
+        // Get the video element
+        var video = document.getElementById("myVideo");
+      
+        // Check if the screen width is less than or equal to a specific size (e.g., 600px)
+        function checkScreenWidth() {
+          if (window.innerWidth <= 600) {
+            video.pause();
+          }
+        }
+      
+        // Add an event listener for the resize event
+        window.addEventListener("resize", checkScreenWidth);
+      
+        // Check the screen width on page load
+        checkScreenWidth();
+      </script>
+   
+
+   
+
+
+
+
+</body>
+</html>
+
+
